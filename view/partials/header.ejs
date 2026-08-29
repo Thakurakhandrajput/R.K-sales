@@ -1,0 +1,50 @@
+<header class="topbar">
+  <div class="topbar-row">
+    <button class="icon-btn" id="menuBtn" aria-label="Menu">
+      <svg class="icon"><use href="#i-menu"/></svg>
+    </button>
+
+    <a href="/" class="brand">
+      <span class="brand-mark">RK</span>
+      <span class="brand-text">
+        <span class="brand-name">R.K SALES</span>
+        <span class="brand-tag">Door Fittings &middot; Locks &middot; Hardware</span>
+      </span>
+    </a>
+
+    <button class="icon-btn wishlist-btn" id="wishlistBtn" aria-label="Wishlist">
+      <svg class="icon"><use href="#i-heart"/></svg>
+      <span class="badge" id="wishlistCount">0</span>
+    </button>
+  </div>
+
+  <% if (typeof showSearch === 'undefined' || showSearch) { %>
+  <div class="searchbar">
+    <svg class="icon icon-sm muted"><use href="#i-search"/></svg>
+    <input id="siteSearch" type="text" placeholder="Search locks, handles, hinges..." autocomplete="off" />
+    <button class="icon-btn icon-btn-sm" aria-label="Voice search">
+      <svg class="icon icon-sm"><use href="#i-mic"/></svg>
+    </button>
+  </div>
+  <% } %>
+</header>
+
+<nav class="drawer" id="sideDrawer">
+  <div class="drawer-inner">
+    <div class="drawer-head">
+      <span class="brand-mark">RK</span>
+      <div>
+        <div class="brand-name">R.K SALES</div>
+        <div class="brand-tag">Door Fittings &middot; Locks &middot; Hardware</div>
+      </div>
+    </div>
+    <a href="/">Home</a>
+    <a href="/products">All Products</a>
+    <a href="/products#Locks">Locks</a>
+    <a href="/products#Door%20Handles">Door Handles</a>
+    <a href="/products#Hinges">Hinges</a>
+    <a href="/products#Drawer%20Slides">Drawer Slides</a>
+    <a href="https://wa.me/910000000000" target="_blank" rel="noopener">Contact on WhatsApp</a>
+  </div>
+</nav>
+<div class="scrim" id="scrim"></div>

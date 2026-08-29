@@ -1,0 +1,15 @@
+<article class="p-card" data-id="<%= p.id %>">
+  <div class="p-thumb">
+    <svg><use href="#i-<%= p.category === 'Locks' ? 'lock' : p.category === 'Door Handles' ? 'handle' : p.category === 'Hinges' ? 'hinge' : p.category === 'Drawer Slides' ? 'slide' : 'lock' %>"/></svg>
+    <button class="p-fav" data-fav="<%= p.id %>" aria-label="Save to wishlist">
+      <svg><use href="#i-heart"/></svg>
+    </button>
+  </div>
+  <div class="p-body">
+    <span class="p-cat"><%= p.category %></span>
+    <span class="p-name"><%= p.name %></span>
+    <span class="p-brand"><%= p.brand %> &middot; <%= p.finish %></span>
+    <span class="p-price"><%= p.price %></span>
+    <a href="/shop/<%= p.id %>" class="p-view">View Details</a>
+  </div>
+</article>

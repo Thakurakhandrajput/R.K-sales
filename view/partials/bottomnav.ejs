@@ -1,0 +1,32 @@
+<nav class="bottomnav">
+  <a href="/" class="nav-item <%= page === 'home' ? 'active' : '' %>">
+    <svg class="icon"><use href="#i-home"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="/products" class="nav-item <%= (page === 'products' || page === 'shop') ? 'active' : '' %>">
+    <svg class="icon"><use href="#i-grid"/></svg>
+    <span>Categories</span>
+  </a>
+  <button class="nav-item" id="navWishlistBtn" type="button">
+    <svg class="icon"><use href="#i-heart"/></svg>
+    <span>Wishlist</span>
+  </button>
+  <a href="https://wa.me/910000000000" target="_blank" rel="noopener" class="nav-item">
+    <svg class="icon"><use href="#i-chat"/></svg>
+    <span>Inquiry</span>
+  </a>
+  <a href="tel:+910000000000" class="nav-item">
+    <svg class="icon"><use href="#i-user"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<aside class="wishlist-drawer" id="wishlistDrawer">
+  <div class="wishlist-head">
+    <h3>Your Wishlist</h3>
+    <button class="icon-btn" id="closeWishlist" aria-label="Close">&times;</button>
+  </div>
+  <div class="wishlist-body" id="wishlistBody">
+    <p class="wishlist-empty">No products saved yet. Tap the heart on any product to save it here.</p>
+  </div>
+</aside>

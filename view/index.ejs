@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head', { title: 'R.K Sales — Door Fittings, Locks & Hardware' }) %>
+</head>
+<body>
+<%- include('partials/icons') %>
+<div class="app-shell">
+  <%- include('partials/header', { showSearch: true }) %>
+
+  <!-- Hero -->
+  <section class="hero reveal">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">R.K Sales</span>
+      <h1>Premium Hardware<br/>for <em>Every Door</em></h1>
+      <p>Locks &middot; Handles &middot; Hinges &middot; Fittings</p>
+    </div>
+    <div class="hero-glyphs">
+      <span class="glyph"><svg><use href="#i-lock"/></svg></span>
+      <span class="glyph"><svg><use href="#i-handle"/></svg></span>
+      <span class="glyph"><svg><use href="#i-hinge"/></svg></span>
+    </div>
+  </section>
+
+  <!-- Shop by category -->
+  <section class="section reveal">
+    <div class="section-head">
+      <h2>Shop by Category</h2>
+      <a href="/products" class="view-all">View All <svg><use href="#i-chevron"/></svg></a>
+    </div>
+    <div class="cat-grid">
+      <% categories.forEach(function(c){ %>
+      <a href="/products#<%= encodeURIComponent(c.name) %>" class="cat-card">
+        <div class="cat-icon"><svg class="icon"><use href="#i-<%= c.icon %>"/></svg></div>
+        <span><%= c.name %></span>
+      </a>
+      <% }); %>
+    </div>
+  </section>
+
+  <!-- Promo tiles -->
+  <section class="section reveal">
+    <div class="promo-grid">
+      <a href="/products" class="promo-tile new">
+        <h3>New Arrivals</h3>
+        <a href="/products" class="sub">Discover Now &rsaquo;</a>
+        <span class="promo-icon"><svg><use href="#i-handle"/></svg></span>
+      </a>
+      <a href="/products" class="promo-tile best">
+        <h3>Best Sellers</h3>
+        <a href="/products" class="sub">Explore Now &rsaquo;</a>
+        <span class="promo-icon"><svg><use href="#i-lock"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section reveal">
+    <div class="section-head"><h2>Why Choose Us</h2></div>
+    <div class="why-grid">
+      <div class="why-card"><svg><use href="#i-shield"/></svg><span>Premium Quality</span></div>
+      <div class="why-card"><svg><use href="#i-gear"/></svg><span>Modern Design</span></div>
+      <div class="why-card"><svg><use href="#i-check"/></svg><span>Trusted Brand</span></div>
+      <div class="why-card"><svg><use href="#i-headset"/></svg><span>Expert Support</span></div>
+    </div>
+  </section>
+
+  <!-- Endless feed, Flipkart-style -->
+  <section class="section reveal">
+    <div class="section-head"><h2>Trending in Hardware</h2></div>
+    <div class="feed-grid" id="feedGrid" data-page="1">
+      <% initialFeed.forEach(function(p){ %>
+        <%- include('partials/product-card', { p: p, cardId: p.feedId }) %>
+      <% }); %>
+    </div>
+    <div class="feed-sentinel" id="feedSentinel"><span class="spinner"></span> Loading more products&hellip;</div>
+  </section>
+
+  <%- include('partials/bottomnav', { page: 'home' }) %>
+</div>
+<div class="toast" id="toast"></div>
+<script src="/js/main.js"></script>
+</body>
+</html>

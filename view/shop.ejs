@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head', { title: product.name + ' — R.K Sales' }) %>
+</head>
+<body>
+<%- include('partials/icons') %>
+<div class="app-shell">
+  <%- include('partials/header', { showSearch: false }) %>
+
+  <div class="pd-gallery">
+    <svg><use href="#i-<%= product.category === 'Locks' ? 'lock' : product.category === 'Door Handles' ? 'handle' : product.category === 'Hinges' ? 'hinge' : product.category === 'Drawer Slides' ? 'slide' : 'lock' %>"/></svg>
+    <button class="pd-fav" data-fav="<%= product.id %>" aria-label="Save to wishlist">
+      <svg><use href="#i-heart"/></svg>
+    </button>
+  </div>
+
+  <div class="pd-body">
+    <span class="pd-cat"><%= product.category %></span>
+    <h1 class="pd-name"><%= product.name %></h1>
+    <p class="pd-brand"><%= product.brand %> &middot; <%= product.finish %> finish</p>
+    <div class="pd-price"><%= product.price %></div>
+
+    <div class="pd-specs">
+      <div class="spec-box"><div class="label">Brand</div><div class="value"><%= product.brand %></div></div>
+      <div class="spec-box"><div class="label">Finish</div><div class="value"><%= product.finish %></div></div>
+      <div class="spec-box"><div class="label">Category</div><div class="value"><%= product.category %></div></div>
+      <div class="spec-box"><div class="label">Availability</div><div class="value">In Stock</div></div>
+    </div>
+
+    <p class="pd-desc"><%= product.description %></p>
+
+    <div class="pd-tags">
+      <% product.tags.forEach(function(t){ %><span class="tag">#<%= t.replace(/\s+/g,'') %></span><% }); %>
+    </div>
+
+    <div class="notice-badge">
+      <svg><use href="#i-shield"/></svg>
+      <span>This is a catalog listing for browsing only — no online purchase. Send an inquiry and our team will get back to you with price &amp; availability.</span>
+    </div>
+
+    <div class="pd-actions">
+      <a class="btn btn-primary btn-wide" target="_blank" rel="noopener"
+         href="https://wa.me/910000000000?text=<%= encodeURIComponent('Hi R.K Sales, I am interested in: ' + product.name + ' (' + product.price + ').') %>">
+        <svg><use href="#i-whatsapp"/></svg> Inquire on WhatsApp
+      </a>
+    </div>
+    <div class="pd-actions">
+      <a class="btn btn-outline" href="mailto:orders@rksales.example?subject=<%= encodeURIComponent('Inquiry: ' + product.name) %>&body=<%= encodeURIComponent('Hi, I would like more details about ' + product.name + '.') %>">
+        <svg><use href="#i-mail"/></svg> Email Inquiry
+      </a>
+      <button class="btn btn-ghost" id="pdWishlistBtn" data-fav-btn="<%= product.id %>">
+        <svg><use href="#i-heart"/></svg> Save
+      </button>
+    </div>
+
+    <% if (related.length) { %>
+    <div class="section-head" style="padding: 0; margin-top: 10px;"><h2>Related Products</h2></div>
+    <div class="related-scroll">
+      <% related.forEach(function(p){ %>
+        <%- include('partials/product-card', { p: p, cardId: p.id }) %>
+      <% }); %>
+    </div>
+    <% } %>
+  </div>
+
+  <%- include('partials/bottomnav', { page: 'shop' }) %>
+</div>
+<div class="toast" id="toast"></div>
+<script src="/js/main.js"></script>
+</body>
+</html>

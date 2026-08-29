@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head', { title: 'All Products — R.K Sales' }) %>
+</head>
+<body>
+<%- include('partials/icons') %>
+<div class="app-shell">
+  <%- include('partials/header', { showSearch: true }) %>
+
+  <div class="page-heading reveal">
+    <h1>All Products</h1>
+    <p><%= allProducts.length %> items across locks, handles, hinges &amp; more</p>
+  </div>
+
+  <div class="chip-row reveal">
+    <button class="chip active" data-filter="All">All</button>
+    <% categories.forEach(function(c){ %>
+      <button class="chip" data-filter="<%= c.name %>"><%= c.name %></button>
+    <% }); %>
+    <button class="chip" data-filter="Accessories">Accessories</button>
+  </div>
+
+  <section class="section">
+    <div class="product-grid" id="productGrid">
+      <% allProducts.forEach(function(p){ %>
+        <%- include('partials/product-card', { p: p, cardId: p.id }) %>
+      <% }); %>
+    </div>
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <svg><use href="#i-search"/></svg>
+      <p>No products match your search.</p>
+    </div>
+  </section>
+
+  <%- include('partials/bottomnav', { page: 'products' }) %>
+</div>
+<div class="toast" id="toast"></div>
+<script src="/js/main.js"></script>
+</body>
+</html>

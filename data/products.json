@@ -1,0 +1,202 @@
+[
+  {
+    "id": "lock-001",
+    "name": "Godrej Ultra Mortise Lock Set",
+    "category": "Locks",
+    "brand": "Godrej",
+    "finish": "Antique Brass",
+    "price": "₹2,450",
+    "description": "Heavy-duty 5-lever mortise lock set with 3 keys, designed for main doors. Anti-drill hardened steel bolt with rust-resistant antique brass finish.",
+    "tags": ["main door", "mortise", "5-lever"]
+  },
+  {
+    "id": "lock-002",
+    "name": "Digital Smart Door Lock - Keypad + Card",
+    "category": "Locks",
+    "brand": "Yale",
+    "finish": "Matte Black",
+    "price": "₹11,900",
+    "description": "Keyless entry with PIN code, RFID card and mechanical key backup. Auto-lock feature with low-battery alert.",
+    "tags": ["smart lock", "digital", "keypad"]
+  },
+  {
+    "id": "lock-003",
+    "name": "Heavy Duty Padlock 65mm",
+    "category": "Locks",
+    "brand": "Link",
+    "finish": "Chrome",
+    "price": "₹380",
+    "description": "Solid brass body padlock with hardened steel shackle, weatherproof for shutters and gates.",
+    "tags": ["padlock", "shutter", "gate"]
+  },
+  {
+    "id": "lock-004",
+    "name": "Cupboard Drawer Lock Set",
+    "category": "Locks",
+    "brand": "Dorset",
+    "finish": "Nickel",
+    "price": "₹165",
+    "description": "Compact cam lock for drawers and cabinets, easy to install with 2 keys included.",
+    "tags": ["drawer", "cabinet", "cam lock"]
+  },
+  {
+    "id": "handle-001",
+    "name": "Long Door Pull Handle 600mm",
+    "category": "Door Handles",
+    "brand": "Dorma",
+    "finish": "Rose Gold",
+    "price": "₹1,850",
+    "description": "Solid stainless steel pull handle for main doors and showrooms, back-to-back fixing.",
+    "tags": ["pull handle", "main door", "showroom"]
+  },
+  {
+    "id": "handle-002",
+    "name": "Mortise Lever Handle Set",
+    "category": "Door Handles",
+    "brand": "Godrej",
+    "finish": "Satin Steel",
+    "price": "₹720",
+    "description": "Ergonomic lever handle set for internal doors, works with standard mortise locks.",
+    "tags": ["lever handle", "internal door"]
+  },
+  {
+    "id": "handle-003",
+    "name": "Glass Door Handle - H Type",
+    "category": "Door Handles",
+    "brand": "Hafele",
+    "finish": "Chrome",
+    "price": "₹1,150",
+    "description": "H-type handle for frameless glass doors, includes rubber cushioning to protect glass.",
+    "tags": ["glass door", "commercial"]
+  },
+  {
+    "id": "handle-004",
+    "name": "Cabinet Knob - Round",
+    "category": "Door Handles",
+    "brand": "Ozone",
+    "finish": "Antique Copper",
+    "price": "₹90",
+    "description": "Classic round knob for kitchen and wardrobe cabinets, screw-fit installation.",
+    "tags": ["cabinet knob", "kitchen"]
+  },
+  {
+    "id": "hinge-001",
+    "name": "Heavy Duty Door Hinge 4 Inch",
+    "category": "Hinges",
+    "brand": "Ebco",
+    "finish": "Stainless Steel",
+    "price": "₹95",
+    "description": "Ball-bearing hinge for smooth, silent operation on wooden and metal doors. Set of 2.",
+    "tags": ["door hinge", "ball bearing"]
+  },
+  {
+    "id": "hinge-002",
+    "name": "Soft Close Cabinet Hinge",
+    "category": "Hinges",
+    "brand": "Hettich",
+    "finish": "Nickel Plated",
+    "price": "₹140",
+    "description": "Hydraulic soft-close hinge for modular kitchen and wardrobe shutters, 110° opening angle.",
+    "tags": ["soft close", "modular kitchen"]
+  },
+  {
+    "id": "hinge-003",
+    "name": "Piano Hinge 6 Feet",
+    "category": "Hinges",
+    "brand": "Ebco",
+    "finish": "Brass",
+    "price": "₹480",
+    "description": "Continuous piano hinge for cupboards and long shutters, cut-to-size available.",
+    "tags": ["piano hinge", "cupboard"]
+  },
+  {
+    "id": "hinge-004",
+    "name": "Concealed Hinge - Clip Top",
+    "category": "Hinges",
+    "brand": "Hafele",
+    "finish": "Nickel",
+    "price": "₹75",
+    "description": "Fully concealed hinge for frameless cabinet doors, adjustable in 3 directions.",
+    "tags": ["concealed", "frameless"]
+  },
+  {
+    "id": "slide-001",
+    "name": "Telescopic Drawer Slide 18 Inch",
+    "category": "Drawer Slides",
+    "brand": "Ebco",
+    "finish": "Zinc Plated",
+    "price": "₹310",
+    "description": "Ball-bearing telescopic channel with full extension, pair, load capacity 35kg.",
+    "tags": ["drawer slide", "telescopic"]
+  },
+  {
+    "id": "slide-002",
+    "name": "Soft Close Drawer Slide 20 Inch",
+    "category": "Drawer Slides",
+    "brand": "Hettich",
+    "finish": "Silver",
+    "price": "₹520",
+    "description": "Smooth soft-close motion drawer channel, pair, ideal for modular kitchen drawers.",
+    "tags": ["soft close", "kitchen drawer"]
+  },
+  {
+    "id": "slide-003",
+    "name": "Wardrobe Basket Slide Set",
+    "category": "Drawer Slides",
+    "brand": "Ozone",
+    "finish": "Chrome",
+    "price": "₹640",
+    "description": "Pull-out wire basket with slide mechanism for wardrobe organisation.",
+    "tags": ["wardrobe", "pull-out basket"]
+  },
+  {
+    "id": "slide-004",
+    "name": "Under-Mount Slide - Push to Open",
+    "category": "Drawer Slides",
+    "brand": "Hettich",
+    "finish": "Grey",
+    "price": "₹780",
+    "description": "Handle-free push-to-open under-mount slide for a seamless modern kitchen look.",
+    "tags": ["push to open", "under mount"]
+  },
+  {
+    "id": "acc-001",
+    "name": "Door Stopper - Magnetic",
+    "category": "Accessories",
+    "brand": "Dorset",
+    "finish": "Chrome",
+    "price": "₹120",
+    "description": "Magnetic door stopper that holds doors firmly open, floor-mounted.",
+    "tags": ["door stopper", "magnetic"]
+  },
+  {
+    "id": "acc-002",
+    "name": "Hydraulic Door Closer",
+    "category": "Accessories",
+    "brand": "Dorma",
+    "finish": "Silver",
+    "price": "₹1,290",
+    "description": "Adjustable hydraulic door closer for commercial and residential entry doors.",
+    "tags": ["door closer", "hydraulic"]
+  },
+  {
+    "id": "acc-003",
+    "name": "Tower Bolt 8 Inch",
+    "category": "Accessories",
+    "brand": "Link",
+    "finish": "Brass",
+    "price": "₹85",
+    "description": "Heavy gauge tower bolt for extra door security, smooth sliding action.",
+    "tags": ["tower bolt", "security"]
+  },
+  {
+    "id": "acc-004",
+    "name": "Kitchen Basket Organiser Set",
+    "category": "Accessories",
+    "brand": "Ozone",
+    "finish": "Stainless Steel",
+    "price": "₹2,150",
+    "description": "3-tier pull-out basket organiser set for modular kitchen cabinets.",
+    "tags": ["kitchen", "organiser"]
+  }
+]
